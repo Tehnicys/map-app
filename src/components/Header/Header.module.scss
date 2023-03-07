@@ -1,0 +1,23 @@
+.Header {
+  padding: 0.75rem 0.5rem;
+  display: flex;
+  background-color: white;
+  box-shadow: 0px 5px 5px 0px #dadada;
+  padding-bottom: 0;
+
+  .HeaderItem {
+    border-bottom: 2px solid rgb(0, 213, 255);
+    background: white;
+    cursor: pointer;
+
+    .ItemName {
+      transition: transform 300ms;
+      font-weight: 600;
+      padding: 0.5rem;
+
+      &:hover {
+        transform: translateY(-4px);
+      }
+    }
+  }
+}

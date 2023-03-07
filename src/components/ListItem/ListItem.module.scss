@@ -1,0 +1,105 @@
+$secondary-text-color: #b4b3b4;
+
+.Card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1rem 0.75rem;
+
+  .Header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    .Title {
+      font-weight: 600;
+    }
+    .Price {
+      .Count {
+        font-weight: 600;
+      }
+    }
+  }
+  .Description {
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+
+  .Block {
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 0.25rem;
+
+    .Icon {
+      background-color: #eeecf0;
+      border-radius: 0.5rem;
+      width: 1.5rem;
+      height: 24px;
+    }
+
+    .Subway {
+      display: flex;
+      align-items: center;
+
+      * {
+        white-space: nowrap;
+      }
+
+      .LineDot {
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+      }
+
+      .Name {
+        margin-left: 0.25rem;
+        margin-right: 0.5rem;
+      }
+
+      .Distance {
+        color: $secondary-text-color;
+      }
+    }
+  }
+
+  .Contact {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .User {
+      display: flex;
+      column-gap: 0.5rem;
+      align-items: center;
+
+      .Avatar {
+        border-radius: 50%;
+        height: 1.75rem;
+        width: 1.75rem;
+        color: $secondary-text-color;
+        background-color: #e3e4e7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  .Footer {
+    display: flex;
+    justify-content: end;
+
+    .UpdateTime {
+      color: $secondary-text-color;
+      margin-right: 4rem;
+    }
+    .CreateTime {
+      color: $secondary-text-color;
+    }
+  }
+}
